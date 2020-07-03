@@ -9,7 +9,7 @@
 }
 
 .current_user {
-    width: 200px;
+    width: 250px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
