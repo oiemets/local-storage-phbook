@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="./core.js" defer></script>
+    <script src="./index.js" defer></script>
+    <title>local storage phonebook</title>
+</head>
+<body>
+    <div class="header container">
+        <div class="nav">
+            <button id="contactsBtn" type="button" class="btn btn-outline-light">Contacts</button>
+            <button id="addContactBtn" type="button" class="btn btn-outline-light">Add new contact</button>
+            <button id="logInBtn" type="button" class="btn btn-outline-light">Log in</button>
+            <button id="signInBtn" type="button" class="btn btn-outline-light">Sign in</button>
+        </div>
+        <div class="current_user">
+            <h3 id="currentUser"></h3>
+            <button id="logOutBtn" type="button" class="btn btn-outline-light">Log out</button>
+        </div>
+    </div>
+    <div class="main container">
+        <div id="alert" class="" role="alert"></div>
+        <div class="row justify-content-center">
+            <form id="addNewContactForm" class="col-4">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="addFirstname" placeholder="firstname" autocomplete="off" required>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="addLastname" placeholder="lastname" autocomplete="off" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="addPhone" placeholder="phone" autocomplete="off" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="addEmail" placeholder="email" autocomplete="off" required>
+                </div>
+                <button type="submit" class="btn btn-light">Add new contact</button>
+            </form>
+            <form id="logInForm" class="col-4">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="logEmail" placeholder="email" autocomplete="off" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="logPass" placeholder="password" autocomplete="off" required>
+                </div>
+                <button type="submit" class="btn btn-light">Log in</button>
+            </form>
+            <form id="signInForm" class="col-4">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="signFirstname" placeholder="firstname" autocomplete="off" required>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="signLastname" placeholder="lastname" autocomplete="off" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="signEmail" placeholder="email/login" autocomplete="off" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="signPass" placeholder="password" autocomplete="off" required>
+                </div>
+                <button type="submit" class="btn btn-light">Sign in</button>
+            </form>
+            <table id="contactsTable" class="table table-hover col-10">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">firstname</th>
+                        <th scope="col">lastname</th>
+                        <th scope="col">phone</th>
+                        <th scope="col">email</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

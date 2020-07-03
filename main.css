@@ -1,0 +1,28 @@
+@import './reset.css';
+
+.header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.397);
+    padding: 10px;
+}
+
+.current_user {
+    width: 200px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    color: rgb(200, 200, 200);
+    
+}
+
+.current_user h3{
+    font-size: 1em;
+    align-self: center;                                                                                                                                                         
+}
+
+
+.main {
+    margin-top: 5%;
+}
